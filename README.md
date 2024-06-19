@@ -30,5 +30,5 @@ Use this burger menu in your web projects to provide a modern and interactive na
 #Contributing
 Feel free to fork this repository and submit pull requests. Any contributions to improve the menu or add new features are welcome!
 
-#License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
