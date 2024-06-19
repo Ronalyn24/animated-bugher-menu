@@ -1,22 +1,27 @@
-# animated-bugher-menu
+# Animated Burger Menu
+
 This project features a responsive HTML burger menu with smooth animations, designed to enhance user experience with engaging and interactive navigation.
 
-# Features
-HTML & CSS: The core structure of the menu is built using HTML and CSS.
-Smooth Animation: CSS animations are used to add smooth transitions and effects to the burger menu.
-Responsive Design: The menu is responsive and works seamlessly across various devices and screen sizes.
-JavaScript: Basic JavaScript is used to toggle the menu open and close.
+## Features
 
-#Technologies Used
-HTML5: For the structure of the menu.
-CSS3: For styling and animations.
-JavaScript: For menu toggle functionality.
+- **HTML & CSS**: The core structure of the menu is built using HTML and CSS.
+- **Smooth Animation**: CSS animations are used to add smooth transitions and effects to the burger menu.
+- **Responsive Design**: The menu is responsive and works seamlessly across various devices and screen sizes.
+- **JavaScript**: Basic JavaScript is used to toggle the menu open and close.
 
-# Installation
-1. Clone the repository: (Copy code)
-git clone https://github.com/yourusername/animated-burger-menu.git
+## Technologies Used
 
-3. Open the index.html file in your browser to view the menu.
+- **HTML5**: For the structure of the menu.
+- **CSS3**: For styling and animations.
+- **JavaScript**: For menu toggle functionality.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/animated-burger-menu.git
+
+2. Open the index.html file in your browser to view the menu.
 
 #Usage
 Customize the menu items and animations as needed by editing the HTML, CSS, and JavaScript files.
