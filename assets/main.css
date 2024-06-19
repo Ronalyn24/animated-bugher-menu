@@ -1,0 +1,351 @@
+/*=======================================================
+* ONLY FOT LOCAL - START
+=========================================================*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "jazmin";
+  src: url("/fonts/Jazmin-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "jazmin";
+  src: url("/fonts/Jazmin-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "jazmin";
+  src: url("/fonts/Jazmin-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "jazmin";
+  src: url("/fonts/Jazmin-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "jazmin";
+  src: url("/fonts/Jazmin-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* style the body */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background-color: #DBEBEA;
+}
+
+a {
+  font-family: "jazmin";
+  text-decoration: none;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p, h3, a {
+  margin: 0;
+  color: #000;
+}
+
+h3 {
+  color: #000;
+  text-align: center;
+  font-family: "jazmin", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px;
+  margin: 0;
+}
+
+/*=======================================================
+* ONLY FOT LOCAL - END
+=========================================================*/
+/*=======================================================
+* CUSTOM MAIN MENU - START
+=========================================================*/
+#main-burger {
+  position: absolute;
+  top: 65px;
+  left: 40px;
+}
+
+.awMainNav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -100%;
+  background-color: rgba(11, 55, 53, 0.95);
+  overflow-y: scroll;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.awMainNav::-webkit-scrollbar {
+  display: none;
+}
+.main-nav-open .awMainNav {
+  left: 0;
+}
+.awMainNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.awMainNav__wrapper {
+  position: relative;
+  left: -100%;
+  width: 94%;
+  height: 100%;
+  min-height: 650px;
+  background-color: #DBEBEA;
+  -webkit-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+}
+.main-nav-open .awMainNav__wrapper {
+  left: 0;
+}
+.awMainNav__inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 50px;
+}
+.awMainNav__logo {
+  padding-bottom: 95px;
+}
+.awMainNav__logo img {
+  width: 495.39px;
+}
+.awMainNav__menuContent {
+  position: relative;
+  width: 100%;
+}
+.awMainNav__columns {
+  position: relative;
+}
+.awMainNav__menu {
+  width: 26%;
+  position: relative;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 3rem 3rem 0;
+}
+@media only screen and (max-width: 1400px) {
+  .awMainNav__menu {
+    padding: 0 2rem 3rem 0;
+  }
+}
+.awMainNav__menu a {
+  position: relative;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 34px;
+  border-bottom: 1px solid transparent;
+}
+@media only screen and (max-width: 1280px) {
+  .awMainNav__menu a {
+    font-size: 25px;
+  }
+}
+.awMainNav__menu a:hover span, .awMainNav__menu a:focus span {
+  border-bottom: 1px solid #000;
+}
+.awMainNav__menu li {
+  margin-bottom: 30px;
+}
+.awMainNav .menu-parent > a:after {
+  content: "";
+  width: 25px;
+  height: 10px;
+  background: url(../images/newsletter-arrow.svg);
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 6px);
+}
+.awMainNav__sub {
+  display: none;
+  position: absolute;
+  width: 142%;
+  top: 0;
+  left: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 3rem 3rem 3rem;
+}
+@media only screen and (max-width: 1400px) {
+  .awMainNav__sub {
+    padding: 0 2rem 3rem 2rem;
+  }
+}
+.awMainNav__sub a {
+  font-size: 20px;
+  font-weight: 300;
+}
+@media only screen and (max-width: 1280px) {
+  .awMainNav__sub a {
+    font-size: 18px;
+  }
+}
+.awMainNav__subsub {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  padding: 0 3rem 3rem 3rem;
+}
+@media only screen and (max-width: 1400px) {
+  .awMainNav__subsub {
+    padding: 0 2rem 3rem 2rem;
+  }
+}
+.awMainNav__subsub li {
+  margin-bottom: 15px;
+}
+.awMainNav__ads {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 37%;
+}
+.awMainNav__ads .ads-item {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 3rem;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.awMainNav__ads .img-sizer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 69%;
+  overflow: hidden;
+}
+.awMainNav__ads img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.awMainNav__ads .menu-ad-callout {
+  position: relative;
+  background-color: #FFF;
+  width: 85%;
+  margin: -40px auto 0;
+  padding: 40px 0;
+  z-index: 1;
+}
+.awMainNav__ads .menu-ad-callout span {
+  display: block;
+  text-align: center;
+}
+.awMainNav__ads .menu-ad-callout span:first-of-type {
+  color: #000;
+  font-family: Karla;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.awMainNav__ads #menu-ad-1 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.clicked-menu .awMainNav__ads #menu-ad-1 {
+  opacity: 0;
+  visibility: hidden;
+}
+.awMainNav__footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.awMainNav__footer a.button {
+  color: #FFF;
+  text-align: center;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  background: #000;
+  padding: 10px 24px;
+}
+.awMainNav__footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.awMainNav__footer .social-icons li {
+  list-style: none;
+}
+.awMainNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 9;
+}
+
+/*=======================================================
+* CUSTOM MAIN MENU - END
+=========================================================*/
